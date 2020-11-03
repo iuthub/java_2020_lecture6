@@ -1,0 +1,2 @@
+language = "java10"
+run = "cd src && find . -name \"*.java\" -print | xargs javac && java App"
