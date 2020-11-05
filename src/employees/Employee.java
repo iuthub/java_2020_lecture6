@@ -1,18 +1,22 @@
-package employee;
+package employees;
 
 import shared.Payable;
 
-public abstract class Employee
-        implements Payable {
+public abstract class Employee implements Payable {
     private String firstName;
     private String lastName;
     private String socialSecurityNumber;
 
+
+//    private double curEarnings;
+
     // constructor
     public Employee(String first, String last, String ssn){
-        setFirstName(first);
-        setLastName(last);
-        setSocialSecurityNumber(ssn);
+        this.firstName = first;
+        this.lastName = last;
+        this.socialSecurityNumber = ssn;
+        //        Don't call overridable instance methods in constructor
+        //        this.curEarnings = this.earnings();
     }
     // SETTERS
     public void setFirstName(String first){
@@ -24,6 +28,7 @@ public abstract class Employee
     public void setSocialSecurityNumber(String ssn){
         this.socialSecurityNumber = ssn;
     }
+
     // GETTERS
     public String getFirstName(){
         return this.firstName;

@@ -1,4 +1,4 @@
-package employee;
+package employees;
 
 public class SalariedEmployee extends Employee {
     private double weeklySalary;

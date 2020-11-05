@@ -7,4 +7,8 @@ public interface Payable {
     default double getPayableAmount(){
         return 0;
     };
+
+    static double getAmount() {
+        return 0;
+    }
 }
